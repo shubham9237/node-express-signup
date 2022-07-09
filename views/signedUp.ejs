@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <% if(data.subscription == 'on'){ %>
+    <h1>
+      Hello <%=data.first_name%> <%=data.last_name%>, Thank you for signing up.
+      Your account is now created. You would be receiving our periodic
+      newsletters to your email: <%=data.email%>
+    </h1>
+    <% }else{ %>
+    <h1>
+      Hello <%=data.first_name%> <%=data.last_name%>, Thank you for signing up.
+      Your account is now created
+    </h1>
+    <% } %>
+  </body>
+</html>
